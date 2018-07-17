@@ -12,9 +12,11 @@ def solve(a,b,n):
       s = s + 4 * f(a + (2*i-1)*h) + 2 * f(a + 2*i*h)
       i = i+1
       
-  if(n % 2 == 0):
-    s = s - f(a + 2*(i-1)*h)
-    return abs(h * s / 3)
-
   else:
     print("enter even n")
+    exit(0)
+
+  s = s - f(a + 2*(i-1)*h)
+  return abs(h * s / 3)
+
+  
