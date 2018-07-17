@@ -1,3 +1,6 @@
+" only integrable for equally spaced EVEN number of divisions between the intervals [a,b] "
+
+
 def f(x):
   return (x**2 - 3*x)
 
