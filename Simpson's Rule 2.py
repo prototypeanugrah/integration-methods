@@ -15,10 +15,10 @@ def solve(a,b,n):
         s = s + 3*f(a + (3*i-2)*h) + 3*f(a + (3*i-1)*h) + 2*f(a + 3*i*h)
         i = i+1 
   
-  else:
-    print("enter n divisible by 3")
-    exit(0)
+    s = s - f(a + 3*(i-1)*h)
+    return abs(3*h*s/8)
   
-  s = s - f(a + 3*(i-1)*h)
-  return abs(3*h*s/8)
+  else:
+    n = int(input("enter value of n divisible by 3"))
+    return solve(a,b,n)
   
